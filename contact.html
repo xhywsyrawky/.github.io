@@ -78,44 +78,52 @@
                     <h3 data-i18n="calc-title">爱心捐赠与物资配算</h3>
                 </div>
                 
-                <!-- 单次/定期 -->
+                <!-- 选项切换 -->
                 <div class="donation-toggle">
-                    <button class="donation-toggle-btn active" id="toggle-onetime" data-i18n="calc-onetime">单次爱心捐款</button>
-                    <button class="donation-toggle-btn" id="toggle-monthly" data-i18n="calc-monthly">每月定期资助</button>
+                    <button class="donation-toggle-btn active" id="toggle-monthly" data-i18n="calc-monthly">寄送图书登记</button>
+                    <button class="donation-toggle-btn" id="toggle-onetime" data-i18n="calc-onetime">急需课本名录</button>
                 </div>
                 
                 <!-- 快捷预设选项 -->
                 <div class="donation-presets">
-                    <button class="preset-btn" data-val="10">$10</button>
-                    <button class="preset-btn" data-val="25">$25</button>
-                    <button class="preset-btn active" data-val="50">$50</button>
-                    <button class="preset-btn" data-val="100">$100</button>
+                    <button class="preset-btn" data-val="1">1 本/Book</button>
+                    <button class="preset-btn" data-val="5">5 本/Books</button>
+                    <button class="preset-btn active" data-val="10">10 本/Books</button>
+                    <button class="preset-btn" data-val="20">20 本/Books</button>
                 </div>
                 
                 <!-- 滑块与自定义输入框 -->
                 <div class="donation-input-container">
-                    <input type="range" min="5" max="1000" step="5" value="50" class="donation-slider" id="donation-slider">
+                    <input type="range" min="1" max="100" step="1" value="10" class="donation-slider" id="donation-slider">
                     
                     <div class="custom-amount-wrapper">
-                        <span>$</span>
-                        <input type="number" class="custom-amount-input" id="custom-amount-input" min="5" max="10000" value="50">
-                        <span style="font-size: 0.9rem; color: var(--color-text-light); font-weight: normal; margin-left: auto;">USD</span>
+                        <span>📚</span>
+                        <input type="number" class="custom-amount-input" id="custom-amount-input" min="1" max="1000" value="10">
+                        <span style="font-size: 0.9rem; color: var(--color-text-light); font-weight: normal; margin-left: auto;" data-i18n="calc-custom">自定义册数</span>
                     </div>
                 </div>
                 
                 <!-- 动态影响文案盒子 -->
                 <div class="donation-impact-box">
                     <div class="impact-main" id="impact-main">
-                        单次爱心捐款 $50
+                        寄送图书登记 : 10 本
                     </div>
                     <div class="impact-details" id="impact-details">
-                        为 1 名学生提供一个月的“有声点读学习设备”租借及配套电池耗材费。
+                        能基本满足我们新建的“书光盲文角”首期书架陈列，供多名视障儿童轮流借阅。
                     </div>
                 </div>
                 
                 <button class="btn btn-secondary" style="width: 100%; border-radius: var(--border-radius-sm);" id="btn-donate-submit">
-                    ❤️ <span data-i18n="calc-btn-donate">立即前往资助</span>
+                    📦 <span data-i18n="calc-btn-donate">提交捐赠登记</span>
                 </button>
+                
+                <!-- 邮寄地址信息公示 -->
+                <div style="margin-top: 20px; font-size: 0.85rem; border-top: 1px dashed var(--color-border); padding-top: 15px; color: var(--color-text-light);">
+                    <p style="font-weight: 700; margin-bottom: 5px; color: var(--color-primary);">📍 邮寄信息 / Mailing Address:</p>
+                    <p style="margin-bottom: 2px;"><strong>收件人 / To:</strong> 启明书光公益中心 接收组</p>
+                    <p style="margin-bottom: 2px;"><strong>电话 / Phone:</strong> +84 (0) 24-789-0789</p>
+                    <p><strong>地址 / Addr:</strong> 越南河内市巴亭郡讲武路200号 (No.200 Giang Vo Road, Ba Dinh, Hanoi)</p>
+                </div>
             </div>
             
             <!-- 右侧：加入与合作留言框 (双标签页) -->

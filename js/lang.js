@@ -19,7 +19,7 @@ window.translations = {
         "hero-title": "用<span>爱与书光</span>，开启心眼之窗",
         "hero-desc": "启明书光公益中心专注于为越南先天性失明儿童提供免费课本解答、有声读物与盲文教育支持。我们坚信：知识不应该因为身体的残缺而设限。",
         "btn-volunteer": "成为志愿者",
-        "btn-donate": "爱心捐助",
+        "btn-donate": "捐赠课本",
         "btn-more": "了解更多",
         
         // 首页 - 影响统计
@@ -119,21 +119,21 @@ window.translations = {
         "btn-submit-v": "提交志愿者申请",
         
         // 捐助计算器
-        "calc-title": "爱心捐助与物资配算",
-        "calc-monthly": "每月定期资助",
-        "calc-onetime": "单次爱心捐款",
-        "calc-custom": "自定义金额",
-        "calc-btn-donate": "立即前往资助",
-        "impact-prefix": "您的爱心捐赠：",
+        "calc-title": "盲文图书捐赠配算与登记",
+        "calc-monthly": "寄送图书登记",
+        "calc-onetime": "急需课本名录",
+        "calc-custom": "自定义册数",
+        "calc-btn-donate": "提交捐赠登记",
+        "impact-prefix": "您的图书捐赠：",
         
         // 捐赠对应描述（由donation.js使用）
-        "impact-10": "资助录制课后朗读音频 5 小时，能解答 2 名失明儿童的作业疑难。",
-        "impact-25": "购买 1 套盲文写字板与盲文笔，并资助印制 2 本基础盲文拼音读本。",
-        "impact-50": "为 1 名学生提供一个月的“有声点读学习设备”租借及配套电池耗材费。",
-        "impact-100": "购买并捐赠一台多功能盲用听书机，或为一位盲童提供一学期的辅导教材有声化配套支持。",
-        "impact-custom-pre": "这笔资金将全额用于启明书光公益项目。相当于资助了约 ",
-        "impact-custom-unit-hours": " 小时有声伴读录制或 ",
-        "impact-custom-unit-kids": " 位失明孩子的全年免费答疑服务支出。",
+        "impact-10": "捐赠 1 本盲文课本：直接提供给 1 名视障学童，帮助他们跟上本学期关键的课程进度。",
+        "impact-25": "捐赠 5 本盲文课本：为一所偏远学校中资源匮乏的特教班或融合班提供一个年级的核心科目教材支持。",
+        "impact-50": "捐赠 10 本盲文课本：能基本满足我们新建的“书光盲文角”首期书架陈列，供多名视障儿童轮流借阅。",
+        "impact-100": "捐赠 20 本盲文课本：帮助一个偏远乡村建立小型班级流动盲文书箱，打通多位视障学童学习的物理壁垒。",
+        "impact-custom-pre": "您计划捐赠并寄送 ",
+        "impact-custom-unit-hours": " 本盲文课本。这些书籍入库后将直接分配给合作学校，相当于帮扶了约 ",
+        "impact-custom-unit-kids": " 名盲童的核心教材使用需求。衷心感谢您的善举！",
         
         // 底部 Footer
         "footer-about-title": "关于启明书光",
@@ -169,7 +169,7 @@ window.translations = {
         "hero-title": "Thắp sáng tâm hồn bằng <span>Yêu thương & Trang sách</span>",
         "hero-desc": "Trung tâm Từ thiện Ánh Sáng Sách Kính chuyên cung cấp dịch vụ giải đáp sách giáo khoa miễn phí, sách nói và hỗ trợ giáo dục chữ nổi Braille cho trẻ em khiếm thị bẩm sinh tại Việt Nam. Chúng tôi tin rằng kiến thức không giới hạn.",
         "btn-volunteer": "Tình nguyện viên",
-        "btn-donate": "Quyên góp",
+        "btn-donate": "Quyên góp sách",
         "btn-more": "Xem thêm",
         
         // Stats
@@ -269,21 +269,21 @@ window.translations = {
         "btn-submit-v": "Gửi đơn đăng ký",
         
         // Calculator
-        "calc-title": "Mức quyên góp & Phân bổ vật phẩm",
-        "calc-monthly": "Ủng hộ hàng tháng",
-        "calc-onetime": "Ủng hộ một lần",
-        "calc-custom": "Số tiền tùy chọn",
-        "calc-btn-donate": "Tiến hành quyên góp",
-        "impact-prefix": "Đóng góp của bạn tương đương:",
+        "calc-title": "Đăng ký quyên góp sách chữ nổi Braille",
+        "calc-monthly": "Đăng ký gửi sách",
+        "calc-onetime": "SGK đang cần gấp",
+        "calc-custom": "Số lượng tùy chọn",
+        "calc-btn-donate": "Gửi đăng ký vật phẩm",
+        "impact-prefix": "Đóng góp của bạn sẽ:",
         
         // Calculator description
-        "impact-10": "Chi phí thu âm 5 giờ bài giảng âm thanh và giải đáp thắc mắc bài tập cho 2 trẻ em mù.",
-        "impact-25": "Mua 1 bộ bảng viết và bút chữ nổi Braille chuyên dụng kèm 2 cuốn sách tập đọc chữ nổi.",
-        "impact-50": "Chi phí thuê và bảo trì thiết bị học nghe nói chuyên dụng trong 1 tháng cho 1 trẻ em nghèo.",
-        "impact-100": "Tặng 1 chiếc máy nghe nhạc đọc sách chuyên dụng cho người mù, hoặc tài trợ toàn bộ tài liệu âm thanh học tập học kỳ cho 1 học sinh khiếm thị.",
-        "impact-custom-pre": "Số tiền này sẽ được chuyển toàn bộ vào quỹ hoạt động. Tương đương tài trợ khoảng ",
-        "impact-custom-unit-hours": " giờ ghi âm sách giáo khoa hoặc chi phí giải đáp học tập trọn gói 1 năm cho ",
-        "impact-custom-unit-kids": " học sinh khiếm thị.",
+        "impact-10": "Quyên góp 1 cuốn sách nổi: Gửi trực tiếp đến 1 học sinh khiếm thị, giúp em theo kịp tiến độ học tập học kỳ.",
+        "impact-25": "Quyên góp 5 cuốn sách nổi: Hỗ trợ trọn bộ SGK cốt lõi một khối lớp học cho lớp giáo dục hòa nhập khó khăn.",
+        "impact-50": "Quyên góp 10 cuốn sách nổi: Đáp ứng trưng bày kệ sách ban đầu tại góc chữ nổi Ánh Sáng mới dựng cho học sinh mượn đọc.",
+        "impact-100": "Quyên góp 20 cuốn sách nổi: Giúp thiết lập một tủ sách di động nhỏ tại vùng quê hẻo lánh, phục vụ nhiều trẻ em khiếm thị địa phương.",
+        "impact-custom-pre": "Bạn đăng ký gửi ",
+        "impact-custom-unit-hours": " cuốn sách nổi Braille. Chúng tôi sẽ tiếp nhận và phân phối đến các trường liên kết, tương đương hỗ trợ ",
+        "impact-custom-unit-kids": " học sinh khiếm thị tại địa phương. Trân trọng cảm ơn!",
         
         // Footer
         "footer-about-title": "Về Ánh Sáng Sách Kính",
@@ -319,7 +319,7 @@ window.translations = {
         "hero-title": "Empowering Hearts with <span>Love & Light of Books</span>",
         "hero-desc": "The Light of Books Charity Center focuses on providing free textbook Q&A, audiobooks, and Braille literacy support for congenitally blind children in Vietnam. We believe knowledge has no limits.",
         "btn-volunteer": "Join Volunteer",
-        "btn-donate": "Donate Now",
+        "btn-donate": "Donate Books",
         "btn-more": "Learn More",
         
         // Stats
@@ -419,21 +419,21 @@ window.translations = {
         "btn-submit-v": "Submit Application",
         
         // Calculator
-        "calc-title": "Donation Impact Calculator",
-        "calc-monthly": "Monthly Support",
-        "calc-onetime": "One-time Donation",
-        "calc-custom": "Custom Amount",
-        "calc-btn-donate": "Proceed to Donate",
-        "impact-prefix": "Your donation is equivalent to:",
+        "calc-title": "Braille Book Donation Registry",
+        "calc-monthly": "Register Shipment",
+        "calc-onetime": "Urgent Book Needs",
+        "calc-custom": "Custom Book Count",
+        "calc-btn-donate": "Submit Donation Registry",
+        "impact-prefix": "Your donation will:",
         
         // Calculator description
-        "impact-10": "Recording 5 hours of textbook audio and tutoring 2 blind students for homework doubts.",
-        "impact-25": "Purchasing 1 tactile writing board and Braille stylus kit, along with printing 2 basic Braille reading books.",
-        "impact-50": "Providing a 1-month rental of an accessible audio learning device and associated battery costs for a poor student.",
-        "impact-100": "Donating 1 multi-functional digital talking book player, or covering textbook audio digitization costs for a student for a full semester.",
-        "impact-custom-pre": "This fund will go directly to support our projects. It is equivalent to funding approx ",
-        "impact-custom-unit-hours": " hours of audiobook recording or the full-year tutoring service budget for ",
-        "impact-custom-unit-kids": " blind student(s).",
+        "impact-10": "Donate 1 Braille book: Provided directly to 1 blind student, helping them keep up with this semester's core curriculum.",
+        "impact-25": "Donate 5 Braille books: Providing a full set of core textbooks for one grade level in an underfunded special class.",
+        "impact-50": "Donate 10 Braille books: Fulfilling the initial shelf display for our newly built Braille Reading Corner.",
+        "impact-100": "Donate 20 Braille books: Establishing a mobile Braille book chest for a remote village school to serve local blind kids.",
+        "impact-custom-pre": "You plan to donate and ship ",
+        "impact-custom-unit-hours": " Braille textbooks. These books will be registered and distributed, directly helping ",
+        "impact-custom-unit-kids": " blind student(s) with core learning materials. Thank you for your kindness!",
         
         // Footer
         "footer-about-title": "About Ánh Sáng Sách Kính",
