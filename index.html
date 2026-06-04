@@ -1,5 +1,179 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>测试</title></head>
-<body><h1>光翼助学网站测试运行中！</h1></body>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="启明书光公益中心（Trung tâm Từ thiện Ánh Sáng Sách Kính）致力于支持越南先天性失明儿童的教育，提供免费课本疑难解答、有声书及盲文教育支持。">
+    <title>启明书光公益中心 | 首页</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- 1. 无障碍顶部快捷工具栏 -->
+    <div class="accessibility-bar">
+        <div class="container">
+            <div class="accessibility-controls">
+                <button class="accessibility-btn" id="btn-contrast" title="Toggle High Contrast Mode">
+                    👁️ <span data-i18n="acc-contrast">高对比度</span>
+                </button>
+                <button class="accessibility-btn" id="btn-large-text" title="Set Large Font Size">
+                    A+ <span data-i18n="acc-large">中大字号</span>
+                </button>
+                <button class="accessibility-btn" id="btn-xl-text" title="Set Extra Large Font Size">
+                    A++ <span data-i18n="acc-xl">超大字号</span>
+                </button>
+                <button class="accessibility-btn" id="btn-reset-text" title="Reset Accessibility Options">
+                    🔄 <span data-i18n="acc-reset">默认</span>
+                </button>
+            </div>
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="zh">中文</button>
+                <span style="color: rgba(255,255,255,0.4)">|</span>
+                <button class="lang-btn" data-lang="vi">Tiếng Việt</button>
+                <span style="color: rgba(255,255,255,0.4)">|</span>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. 导航头部 -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <img src="assets/logo.png" alt="启明书光 Logo" class="logo-img">
+                <div class="logo-text">
+                    <h1 data-i18n="footer-about-title">启明书光公益中心</h1>
+                    <p data-i18n="sub-title">支持越南先天性失明儿童教育</p>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active" data-i18n="nav-home">首页</a></li>
+                    <li><a href="about.html" data-i18n="nav-about">关于我们</a></li>
+                    <li><a href="projects.html" data-i18n="nav-projects">助学项目</a></li>
+                    <li><a href="contact.html" data-i18n="nav-contact">加入与合作</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- 3. Hero 宣传区域 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h2 data-i18n="hero-title" data-i18n-html="true">用<span>爱与书光</span>，开启心眼之窗</h2>
+                    <p data-i18n="hero-desc">启明书光公益中心专注于为越南先天性失明儿童提供免费课本解答、有声读物与盲文教育支持。我们坚信：知识不应该因为身体的残缺而设限。</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-secondary" data-i18n="btn-volunteer">成为志愿者</a>
+                        <a href="contact.html#donate-anchor" class="btn btn-outline" data-i18n="btn-donate">爱心捐助</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="assets/hero_banner.png" alt="视障儿童触摸书籍快乐阅读" class="hero-image">
+                    <div class="hero-image-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 影响统计板块 (有数字增长动画) -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 id="stat-kids">0+</h3>
+                    <p data-i18n="stat-1-title">服务视障儿童</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat-q">0+</h3>
+                    <p data-i18n="stat-2-title">累计解答课本难题</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="stat-price">0 VNĐ</h3>
+                    <p data-i18n="stat-3-title">全免费服务承诺</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 我们的核心服务 -->
+    <section class="section-padding container fade-in-section">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 data-i18n="mission-title">我们的服务宗旨</h2>
+            <p style="color: var(--color-text-light)" data-i18n="mission-subtitle">为盲童搭建平等的教育桥梁</p>
+        </div>
+        <div class="mission-cards">
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3 data-i18n="mission-1-title">课本疑难讲解</h3>
+                <p data-i18n="mission-1-desc" style="color: var(--color-text-light)">针对视障儿童在普通教材或盲校教材中遇到的难题，提供专业教师与高年级师范生的一对一文字及语音解答。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔊</div>
+                <h3 data-i18n="mission-2-title">语音/音频课件制作</h3>
+                <p data-i18n="mission-2-desc" style="color: var(--color-text-light)">将晦涩的文字和图表转化为生动、易懂的伴读有声书与朗读音频，方便孩子们通过屏幕阅读器或听书机学习。</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⌨️</div>
+                <h3 data-i18n="mission-3-title">盲文读物与设备资助</h3>
+                <p data-i18n="mission-3-desc" style="color: var(--color-text-light)">筹集资金与物资，为缺乏学习工具的孩子购置盲文打字机、助视器及视听学习设备，并设立盲文图书角。</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px;">
+            <a href="about.html" class="btn btn-primary" data-i18n="btn-more">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 6. 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-container logo-container">
+                        <img src="assets/logo.png" alt="Logo" class="logo-img" style="filter: brightness(1.5);">
+                        <div class="logo-text">
+                            <h1 data-i18n="footer-about-title">启明书光公益中心</h1>
+                        </div>
+                    </div>
+                    <p class="footer-desc" data-i18n="footer-about-desc">
+                        启明书光是一个合法的非政府公益组织，致力于消除视障儿童的学习障碍。我们的全部服务对残障家庭零收费。
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-i18n="footer-links-title">快捷链接</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav-home">首页</a></li>
+                        <li><a href="about.html" data-i18n="nav-about">关于我们</a></li>
+                        <li><a href="projects.html" data-i18n="nav-projects">助学项目</a></li>
+                        <li><a href="contact.html" data-i18n="nav-contact">加入与合作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-i18n="footer-contact-title">联系信息</h3>
+                    <p>📧 <span data-i18n="footer-email">邮箱：contact@books-light.org</span></p>
+                    <p>📞 <span data-i18n="footer-phone">电话：+84 (0) 24-789-0789</span></p>
+                    <p>📍 <span data-i18n="footer-addr">地址：越南河内市巴亭郡讲武路200号</span></p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="footer-copyright" data-i18n="footer-copyright">
+                    © 2026 启明书光公益中心。保留所有权利。
+                </div>
+                <div class="footer-reg-info">
+                    <strong data-i18n="paccom-title">越南政府登记备案信息：</strong>
+                    <p data-i18n="paccom-line-1">活动许可证号：0789/2025/ĐKKD-PACCOM</p>
+                    <p data-i18n="paccom-line-2">批准日期：15/06/2025</p>
+                    <p data-i18n="paccom-line-3">登记机关：外国非政府组织工作委员会 (PACCOM)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本引用 -->
+    <script src="js/lang.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
